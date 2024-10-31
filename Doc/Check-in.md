@@ -1,0 +1,13 @@
+# Check-In #1 November 1, 2024
+### For current data / plot images please check the "Data" folder
+Addressing the feedback we received, we adjusted our pipeline and plan of action to analyze the single-cell sequencing data of early human placenta. We double-checked their dataset and saw that they had integrated the different scRNAseq runs, allowing us to process this data through the Seurat pipeline to extract some information on gene expression.
+
+We will use the following RStudio software: ggplot and DESeq2 to develop volcano plots and differential expression analysis. We will utilize the following software libraries: Tidyverse, patchwork, Seuratobject, and Dplyr. Based on what we learned from the recent lectures, we can effectively implement this software in our pipeline to provide this data for our main project.
+
+Given that the data set looks at two time points post-infection and samples infected with three different strains compared to an uninfected control, we will be paying particular attention to one of the pathogen strains: Listeria monocytogenes. Listeriosis affects many people worldwide and is a foodborne illness; therefore, we wish to explore its effect on the early human placenta.
+
+Since our last submission, we have compiled and run the data through the Seurat pipeline to develop an annotated PCA plot (UMAP). This will provide the foundation for the gene expression analysis we hope to run. We could differentiate between the different cell types using the Seurat algorithm that identified commonalities in the expression of known genes in those cell types. We also wanted to set parameters within our pipeline, so we generated feature scatter plots to observe any outliers from the data and refine our search. As well as processing a variable feature plot allows us to look at the top ten genes of expression.
+
+For project organization, we have been running through the Seurat pipeline in Rstudio to process the normalized dataset. We want to conduct a differential expression analysis we learned from the last lecture to identify some genes and generate a volcano plot. We can then attempt to place these genes on the UMAP as an overlay to correlate the gene to the cell type they express in.
+
+Using the PCA plot, we developed an elbow plot to help identify the PCA plot dimensions. We would like any advice on interpreting the elbow plot so that we can apply it to our data.
